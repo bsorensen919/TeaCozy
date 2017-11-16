@@ -27,6 +27,7 @@ nav {
     text-decoration: underline;
     width: 400px;
     justify-content: space-between;
+    padding: 10px;
 }
 
 /* Content of the screen */
