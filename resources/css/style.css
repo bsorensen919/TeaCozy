@@ -30,3 +30,25 @@ nav {
 }
 
 /* Content of the screen */
+/* Mission */
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+.mission {
+    background-image: url(../img-mission-background.jpg);
+    height:700px;
+    width: 1200px;
+    text-align: center;
+}
+
+.mission-text {
+    background-color: black;
+    position: relative;
+    top: 45%;
+}
+/* debugging */
+div {
+    border: 1px solid red;
+}
