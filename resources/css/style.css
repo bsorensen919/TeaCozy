@@ -1,7 +1,32 @@
-body {
+html {
     font-family: Helvetica;
     font-size: 22px;
     color: seashell;
     background-color: black;
+    text-align: center;
     opacity: 0.9;
 }
+
+/* Header and items within the header */
+header {
+    display: flex;
+    border-bottom: 1px solid seashell;
+    justify-content: space-between;
+    align-items: center;
+    color: seashell;
+    height: 69px;
+}
+
+header img {
+    height: 50px;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    text-decoration: underline;
+    width: 400px;
+    justify-content: space-between;
+}
+
+/* Content of the screen */
