@@ -7,49 +7,142 @@ html {
     opacity: 0.9;
 }
 
+h4 {
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+/* with out the body margin set to 0, I was getting a small area above the header where the 
+content showed through as it was scrolled */
+
+body {
+    margin: 0;
+}
+
 /* Header and items within the header */
 header {
     display: flex;
+    position: fixed;
+    width: 100%;
+    height: 69px;
     border-bottom: 1px solid seashell;
     justify-content: space-between;
     align-items: center;
-    color: seashell;
-    height: 69px;
+    z-index: 1;
+    background-color: black;
 }
 
 header img {
     height: 50px;
-    padding: 10px;
+    margin: 10px;
+
 }
 
 nav {
     display: flex;
     text-decoration: underline;
     width: 400px;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: space-around;
+    margin: 5px;
 }
 
+
+
 /* Content of the screen */
-/* Mission */
 
 .content {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 69px;
+
+}
+/* Mission */
+
+.mission-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mission {
     background-image: url(../img-mission-background.jpg);
     height:700px;
     width: 1200px;
-    text-align: center;
 }
 
 .mission-text {
     background-color: black;
     position: relative;
-    top: 45%;
+    top: 300px;
+
 }
-/* debugging */
+/* Teas of the month */
+.teaofthemonth-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teaofthemonth-block img {
+    height: 200px;
+    width: 300px;
+    margin: 15px;
+}
+
+.teaofthemonth {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    justify-content: center;
+}
+.teas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+/* Locations */
+.locations-block {
+    background-image: url("../img-locations-background.jpg");
+    height: 500px;
+    width: 1200px;
+    justify-content: center;
+}
+
+.all-locations {
+    display: flex;
+    justify-content: center;
+}
+
+.location {
+    width: 300px;
+    opacity: 1;
+    margin: 20px;
+    background-color: black;
+}
+
+.contact {
+    height: 200px;
+}
+footer p {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* debugging - useful to see the boxes on the page
 div {
     border: 1px solid red;
 }
+
+footer {
+    border: 1px solid green;
+}
+
+header {
+    border: 1px solid blue;
+}
+
+*/
